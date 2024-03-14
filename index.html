@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/icono-pagina.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f9d455d934.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+
+        <img class="fondo" src="img/wave-haikei.png" alt="fondo de pagina">
+
+        <header>
+            <div class="header">
+                <img class="logo" src="img/alura.svg" alt="logo de Alura">
+            </div>
+        </header>
+
+        <main>
+            <div class="contenedor">
+                <div class="caja-texto">
+                    <textarea id="ingresarTexto" class="ingresar-texto" placeholder="Ingrese el texto aquí" cols="30" rows="6" 
+                    onfocus="placeholder = ''" onblur="placeholder = 'Ingrese el texto aqui'"></textarea>
+                    <div class="terminos-botones">
+                        <p>
+                            <i class="fa-solid fa-circle-exclamation" style="color: #8E0000;"></i>
+                            Solo letras minusculas y sin acentos
+                        </p>
+
+                        <div class="texto-botones">
+                            <button id="botonEncriptar" class="btn-encriptar"> Encriptar </button>
+                            <button id="botonDesencriptar" class="btn-desencriptar"> Desencriptar </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div id="mensajeTexto" class="mensaje-texto">
+                    <img id="munheco" class="munheco" src="img/munheco.svg" alt="chico buscando">
+                    <textarea id="primeroParrafoResultado" class="primer-parrafo-resultado" placeholder="Ningún mensaje fue encontrado"></textarea>
+                    <p id="segundoParrafoResultado" class="segundo-parrafo-resultado">Ingresa el texto que desees encriptar o desencriptar</p>
+                    <button id="botonCopiar" class="btn-copiar oculto"> Copiar </button>
+                </div>
+            </div>
+        </main>
+    </body>
+    <script src="js/script.js"></script>
+</html>
